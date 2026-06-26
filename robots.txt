@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
 Sitemap: https://retro-bridge-app.github.io/sitemap.xml
