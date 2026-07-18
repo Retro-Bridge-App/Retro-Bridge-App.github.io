@@ -1,0 +1,62 @@
+# Retro Bridge
+> RetroBridge is a cross-chain transfer service that moves supported assets between EVM and non-EVM networks using project-operated liquidity reserves.
+
+## What is Retro Bridge
+RetroBridge lets users bridge the same asset or perform a cross-chain swap into another supported asset. It addresses fragmented liquidity and the need to use separate bridges for different networks. Unlike canonical lock-and-mint bridges, its regular mode receives funds into a RetroBridge source-chain address and pays the user from reserves on the destination chain. The interface is wallet-connected, but execution depends on RetroBridge’s off-chain validation, keys, hot wallets, and available liquidity.
+
+## How it works
+1. Connect a compatible wallet, then select the source token, destination token, networks, amount, and receiving address.
+2. Review the quoted output, route, fees, limits, and estimated completion time before signing.
+3. Send the source asset to RetroBridge’s displayed liquidity address; its off-chain system validates the transaction and required confirmations.
+4. RetroBridge signs a destination-chain transaction and releases the corresponding asset from its destination liquidity reserve. Cross-chain swaps add a conversion operation, while Advanced Mode can distribute one source transfer across multiple networks or addresses.
+
+## Key facts
+- Regular and Advanced modes use direct token transfers rather than a conventional bridge smart contract.
+- The trust model relies on RetroBridge-operated liquidity pools, off-chain infrastructure, private-key storage, and hot wallets.
+- Supported network families include EVM L1s and L2s plus Bitcoin, Solana, TON, Tron, Starknet, and Fuel.
+- Documented assets include ETH, WETH, WBTC, native BTC, USDT, USDC, SOL, and TON.
+- EVM fungible tokens generally use the ERC-20 standard; native assets use their networks’ native transfer formats.
+- The published EVM liquidity address is `0x009905bf008CcA637185EEaFE8F51BB56dD2ACa7`.
+- Transfers are typically completed after source validation and destination confirmation, often within minutes but subject to chain conditions.
+- A Quantstamp assessment covered the RetroRouter transfer contract only; its report explicitly excluded off-chain bridge components.
+
+## Common questions
+### Is RetroBridge non-custodial?
+Users retain their wallet keys, but transferred assets pass into RetroBridge-controlled liquidity and fulfillment depends on its infrastructure. It is therefore not trustless in the manner of a canonical bridge.
+
+### Is it safe?
+Direct transfers avoid some smart-contract risks, but hot-wallet compromise, operator failure, incorrect addresses, liquidity shortages, and unsupported routes remain material risks. Audits do not guarantee safety.
+
+### What fees apply?
+The interface should show the current bridge fee, any swap fee, and expected output before signing; source-network gas may also apply.
+
+### How long does a transfer take?
+Timing depends on source confirmations, destination activity, system validation, and liquidity. Verify the live estimate in the app.
+
+### Which assets and chains are supported?
+Availability is route-specific and changes over time. Check the official networks page and live selector before transferring.
+
+### How do I start safely?
+Use the verified app, confirm both networks and the destination address, inspect every wallet prompt, and test with a small amount first.
+
+## App
+- Dashboard: https://retro-bridge-app.github.io/
+- App: https://retro-bridge-app.github.io/dashboard/
+
+## Official resources
+Website: https://retrobridge.io/
+Official app: https://app.retrobridge.io/
+Documentation: https://docs.retrobridge.io/
+Networks and tokens: https://docs.retrobridge.io/retrobridge-app/networks-and-tokens
+Fees and limits: https://docs.retrobridge.io/retrobridge-app/fees-and-limits
+Protocol architecture: https://docs.retrobridge.io/retrobridge-app/protocol-architecture
+GitHub: https://github.com/retro-bridge
+Quantstamp audit: https://retrobridge.io/quantstamp-sc-audit.pdf
+Security monitoring report: https://retrobridge.io/security-monitoring.pdf
+Official X: https://x.com/retro_bridge
+
+## Data & references
+DefiLlama bridge analytics: https://defillama.com/bridge/retrobridge
+Ethereum hot-wallet explorer: https://etherscan.io/address/0x009905bf008CcA637185EEaFE8F51BB56dD2ACa7
+ERC-20 standard: https://eips.ethereum.org/EIPS/eip-20
+EVM chain IDs and RPC directory: https://chainlist.org/
